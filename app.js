@@ -2,11 +2,24 @@
 const express = require('express');
 const jsonParser = require('body-parser').json;
 const routes = require('./routes');
+const mongoose = require('mongoose');
 const app = express();
 
 // app.use('/static', express.static('public'));
 // app.set('view engine', 'pug');
 app.use(jsonParser());
+
+// Connection to mongoDB
+mongoose.connect('mongodb://localhost:27017/queryHistory');
+const db = mongoose.connection;
+
+db.on('error', function(err) {
+	console.error('connection error:', err);
+});
+
+db.once('open', function() {
+	console.log('db connection successful');
+});
 
 // Connection to / Routes
 app.use('/', routes);
