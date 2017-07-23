@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	min-height: 100%;
+	font-family: sans-serif, Helvetica;
+	color: #4f4f4f;
+}
+
+header {
+	background-color: #3079ab;
+	color: #fff;
+	padding: 40px 0;
+}
+
+header h1 {
+	width: 80%;
+	margin: auto;
+}
+
+header a {
+	text-decoration: none;
+	color: #39add1;
+}
+
+.main-wrapper {
+	width: 80%;
+	margin: auto;
+	padding: 1rem 0;
+}
+
+.examples p {
+	display: inline-block;
+	margin: 0 50% 10px 0;
+	padding: 5px;
+	background-color: #f9f2f4;
+	color: #c7254e;
+	border-radius: 4px;
+	font-size: 0.9em;
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}

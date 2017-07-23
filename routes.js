@@ -47,7 +47,7 @@ router.param('term', function (req, res, next, term) {
 // Route for displaying the api user instructions
 router.get('/', function(req, res, next) {
 	// Render home view
-	res.send('This is home route');
+	res.render('index');
 });
 
 // GET /api/imagesearch/:term

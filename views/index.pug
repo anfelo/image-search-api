@@ -1,0 +1,29 @@
+doctype html
+html(lang='en')
+	head
+		title image-search API
+		link(rel='stylesheet', href='/static/stylesheets/style.css')
+	body
+		header
+			h1 FreeCodeCamp Project: Image Search Abstraction Layer API
+				a(href='https://github.com/anfelo/image-search-api', target='_blank')  - (GitHub)
+		section.main-wrapper
+			.description
+				h2 Description:
+				p 
+					| This is an image search abstraction layer API build with Express. The API uses the Custom Search Engine from google to make the search. </br>
+					| The API has two end points, the first returns a list of objects related to the term specified as a parameter. The second end point returns a list of the latest queries made.  
+			.instructions
+				h2 Instructions:
+				ol
+					li Pass a term as a parameter in the request with the path /api/imagesearch/yourTerm (See Examples).
+					li A list of 10 results will be returned. If an offset is passed as a query parameter, The specified page will be returned.
+					li To view the latest searches made, go to the path /api/latest/imagesearch. A list with the latest 10 queries will be returned.
+			.examples
+				h2 Image Search Examples:
+				p https://anfelo-image-search.glitch.me/api/imagesearch/gandalf
+				p https://anfelo-image-search.glitch.me/api/imagesearch/gandalf?offset=10
+				h2 Latest Searches:
+				p https://anfelo-image-search.glitch.me/api/latest/imagesearch
+		footer
+			p &copy;2017 by anfelo

@@ -5,8 +5,8 @@ const routes = require('./routes');
 const mongoose = require('mongoose');
 const app = express();
 
-// app.use('/static', express.static('public'));
-// app.set('view engine', 'pug');
+app.use('/static', express.static('public'));
+app.set('view engine', 'pug');
 app.use(jsonParser());
 
 // Connection to mongoDB
