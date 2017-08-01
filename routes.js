@@ -3,8 +3,8 @@ const express = require('express');
 const router = express.Router();
 const https = require('https');
 const Query = require('./model').Query;
-const apiKey = 'AIzaSyCDyzh8VTKZrY-oeVt2rbjYoGIFye8xSOc';
-const apiCx = '002318224687233311793:u3cyxpbygba';
+const apiKey = process.env.API_KEY;
+const apiCx = process.env.API_CX;
 
 
 // Example query: 
